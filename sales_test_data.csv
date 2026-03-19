@@ -1,0 +1,101 @@
+Transaction_ID,Date,Customer_Name,Product_Category,Product_Name,Quantity,Unit_Price,Region,Payment_Method
+TSX-1000,2026-02-04,John Doe,Office Supplies,Mechanical Keyboard,3,432,East,PayPal
+TSX-1001,2026-01-09,Emily Blunt,Fitness,SpeedJump Rope,4,49,North,PayPal
+TSX-1002,2026-03-04,Amit Singh,Office Supplies,Mechanical Keyboard,5,146,South,UPI
+TSX-1003,2026-01-31,Emily Blunt,Office Supplies,Mechanical Keyboard,1,449,South,PayPal
+TSX-1004,2026-02-05,Emily Blunt,Office Supplies,Bamboo Desk Organizer,4,422,East,Debit Card
+TSX-1005,2026-01-05,Sara Khan,Electronics,HyperLink Router,3,148,East,Credit Card
+TSX-1006,2026-01-08,Vikram Rao,Fitness,IronGrip Dumbbells,4,44,North,Credit Card
+TSX-1007,2026-01-24,John Doe,Apparel,WeatherGuard Jacket,2,42,East,Credit Card
+TSX-1008,2026-02-10,Vikram Rao,Fitness,Yoga Mat Pro,5,383,West,UPI
+TSX-1009,2026-02-03,Amit Singh,Fitness,SpeedJump Rope,5,122,West,Debit Card
+TSX-1010,2026-01-29,Emily Blunt,Apparel,WeatherGuard Jacket,1,150,East,Credit Card
+TSX-1011,2026-01-20,Vikram Rao,Apparel,Cotton Slim-Fit Tee,4,483,North,Debit Card
+TSX-1012,2026-02-14,Amit Singh,Apparel,Breathable Mesh Sneakers,2,141,West,Credit Card
+TSX-1013,2026-03-06,Sara Khan,Electronics,Lumina Smart Bulb,4,272,South,Credit Card
+TSX-1014,2026-02-04,Sara Khan,Electronics,Voltex Headphones,1,183,South,Credit Card
+TSX-1015,2026-03-03,Amit Singh,Office Supplies,Mechanical Keyboard,3,225,West,Debit Card
+TSX-1016,2026-01-14,Amit Singh,Office Supplies,Mechanical Keyboard,4,433,East,PayPal
+TSX-1017,2026-02-15,Sara Khan,Fitness,Yoga Mat Pro,2,260,East,UPI
+TSX-1018,2026-02-05,Amit Singh,Electronics,Lumina Smart Bulb,3,176,North,PayPal
+TSX-1019,2026-02-21,John Doe,Fitness,Yoga Mat Pro,5,180,North,PayPal
+TSX-1020,2026-01-28,Sara Khan,Electronics,HyperLink Router,4,222,West,Credit Card
+TSX-1021,2026-01-29,Amit Singh,Fitness,SpeedJump Rope,3,54,East,Debit Card
+TSX-1022,2026-01-22,Emily Blunt,Fitness,IronGrip Dumbbells,1,285,West,Debit Card
+TSX-1023,2026-03-02,Vikram Rao,Electronics,Voltex Headphones,5,440,South,Credit Card
+TSX-1024,2026-01-19,John Doe,Apparel,Cotton Slim-Fit Tee,5,298,South,PayPal
+TSX-1025,2026-01-11,Vikram Rao,Apparel,WeatherGuard Jacket,3,252,West,PayPal
+TSX-1026,2026-01-03,Emily Blunt,Fitness,SpeedJump Rope,4,264,West,Debit Card
+TSX-1027,2026-01-19,John Doe,Electronics,SwiftTab Tablet,2,262,West,PayPal
+TSX-1028,2026-02-15,Sara Khan,Fitness,SpeedJump Rope,4,258,North,PayPal
+TSX-1029,2026-03-06,Sara Khan,Apparel,Cotton Slim-Fit Tee,5,93,South,PayPal
+TSX-1030,2026-03-14,John Doe,Apparel,Breathable Mesh Sneakers,3,225,West,Credit Card
+TSX-1031,2026-02-21,John Doe,Office Supplies,Mechanical Keyboard,5,79,South,Credit Card
+TSX-1032,2026-01-03,John Doe,Electronics,Lumina Smart Bulb,3,51,North,Credit Card
+TSX-1033,2026-03-13,Vikram Rao,Fitness,SpeedJump Rope,4,428,East,UPI
+TSX-1034,2026-01-17,Amit Singh,Electronics,HyperLink Router,3,121,East,Credit Card
+TSX-1035,2026-02-06,Emily Blunt,Electronics,Voltex Headphones,1,441,East,UPI
+TSX-1036,2026-01-25,Emily Blunt,Fitness,Yoga Mat Pro,2,270,North,Credit Card
+TSX-1037,2026-02-06,John Doe,Electronics,HyperLink Router,1,296,South,Credit Card
+TSX-1038,2026-02-15,Sara Khan,Fitness,Yoga Mat Pro,4,236,South,Credit Card
+TSX-1039,2026-01-11,Emily Blunt,Apparel,Cotton Slim-Fit Tee,1,93,South,Debit Card
+TSX-1040,2026-02-26,Amit Singh,Apparel,WeatherGuard Jacket,2,322,West,Debit Card
+TSX-1041,2026-02-28,Sara Khan,Electronics,Voltex Headphones,2,465,East,Credit Card
+TSX-1042,2026-02-14,Emily Blunt,Office Supplies,Ergonomic Chair,2,114,South,Debit Card
+TSX-1043,2026-01-26,Vikram Rao,Office Supplies,Ergonomic Chair,4,190,North,UPI
+TSX-1044,2026-01-26,Amit Singh,Apparel,WeatherGuard Jacket,5,75,South,Debit Card
+TSX-1045,2026-01-11,Emily Blunt,Office Supplies,Mechanical Keyboard,3,165,North,Credit Card
+TSX-1046,2026-03-09,John Doe,Electronics,Lumina Smart Bulb,1,238,North,PayPal
+TSX-1047,2026-02-26,Vikram Rao,Apparel,Cotton Slim-Fit Tee,4,91,South,PayPal
+TSX-1048,2026-01-28,Amit Singh,Fitness,IronGrip Dumbbells,1,190,South,Debit Card
+TSX-1049,2026-01-18,John Doe,Fitness,SpeedJump Rope,5,489,South,Debit Card
+TSX-1050,2026-01-04,Sara Khan,Electronics,HyperLink Router,3,385,South,Credit Card
+TSX-1051,2026-01-01,John Doe,Apparel,Breathable Mesh Sneakers,1,337,South,Debit Card
+TSX-1052,2026-01-09,John Doe,Electronics,HyperLink Router,5,227,West,Debit Card
+TSX-1053,2026-01-23,Emily Blunt,Apparel,Cotton Slim-Fit Tee,3,167,South,UPI
+TSX-1054,2026-03-17,Emily Blunt,Office Supplies,Mechanical Keyboard,5,498,East,Debit Card
+TSX-1055,2026-01-16,John Doe,Office Supplies,Mechanical Keyboard,5,257,East,UPI
+TSX-1056,2026-02-08,Vikram Rao,Fitness,Yoga Mat Pro,2,129,South,Credit Card
+TSX-1057,2026-02-28,Amit Singh,Electronics,Voltex Headphones,5,445,South,Debit Card
+TSX-1058,2026-02-04,Vikram Rao,Apparel,WeatherGuard Jacket,5,70,West,UPI
+TSX-1059,2026-01-01,John Doe,Office Supplies,Bamboo Desk Organizer,4,242,South,Debit Card
+TSX-1060,2026-03-11,Sara Khan,Electronics,SwiftTab Tablet,4,366,North,Credit Card
+TSX-1061,2026-03-03,Sara Khan,Fitness,IronGrip Dumbbells,1,405,East,PayPal
+TSX-1062,2026-03-11,Amit Singh,Electronics,Lumina Smart Bulb,5,344,West,Credit Card
+TSX-1063,2026-01-11,Emily Blunt,Apparel,Breathable Mesh Sneakers,5,363,North,UPI
+TSX-1064,2026-01-31,Sara Khan,Electronics,HyperLink Router,5,88,East,Credit Card
+TSX-1065,2026-03-01,Amit Singh,Electronics,HyperLink Router,2,67,North,Credit Card
+TSX-1066,2026-01-22,Emily Blunt,Apparel,WeatherGuard Jacket,5,116,East,Debit Card
+TSX-1067,2026-01-28,John Doe,Electronics,Voltex Headphones,1,241,West,Credit Card
+TSX-1068,2026-02-17,John Doe,Apparel,Breathable Mesh Sneakers,4,148,South,UPI
+TSX-1069,2026-02-08,John Doe,Apparel,WeatherGuard Jacket,3,462,East,Debit Card
+TSX-1070,2026-01-11,John Doe,Fitness,IronGrip Dumbbells,3,435,West,Debit Card
+TSX-1071,2026-01-30,Amit Singh,Electronics,Lumina Smart Bulb,2,306,South,Credit Card
+TSX-1072,2026-03-05,Amit Singh,Apparel,WeatherGuard Jacket,4,455,North,UPI
+TSX-1073,2026-03-13,Amit Singh,Office Supplies,Mechanical Keyboard,4,331,East,Credit Card
+TSX-1074,2026-01-24,Sara Khan,Office Supplies,Ergonomic Chair,1,87,East,Credit Card
+TSX-1075,2026-02-22,Emily Blunt,Fitness,Yoga Mat Pro,1,368,South,Debit Card
+TSX-1076,2026-03-04,Sara Khan,Office Supplies,Bamboo Desk Organizer,1,99,South,Debit Card
+TSX-1077,2026-02-28,Amit Singh,Fitness,Yoga Mat Pro,3,372,West,PayPal
+TSX-1078,2026-01-13,Amit Singh,Electronics,HyperLink Router,5,426,North,Credit Card
+TSX-1079,2026-03-01,Vikram Rao,Electronics,SwiftTab Tablet,3,323,West,UPI
+TSX-1080,2026-02-28,Amit Singh,Apparel,Breathable Mesh Sneakers,2,282,West,PayPal
+TSX-1081,2026-01-24,Amit Singh,Electronics,HyperLink Router,3,445,East,UPI
+TSX-1082,2026-02-07,Sara Khan,Fitness,SpeedJump Rope,3,369,West,Debit Card
+TSX-1083,2026-02-18,John Doe,Fitness,IronGrip Dumbbells,3,440,West,Debit Card
+TSX-1084,2026-03-03,Vikram Rao,Fitness,Yoga Mat Pro,2,237,West,Credit Card
+TSX-1085,2026-02-02,John Doe,Office Supplies,Ergonomic Chair,1,371,West,Credit Card
+TSX-1086,2026-01-02,John Doe,Apparel,Breathable Mesh Sneakers,2,66,South,PayPal
+TSX-1087,2026-03-03,Emily Blunt,Apparel,Breathable Mesh Sneakers,5,496,South,Credit Card
+TSX-1088,2026-02-01,Sara Khan,Electronics,Lumina Smart Bulb,1,246,West,Debit Card
+TSX-1089,2026-01-29,Vikram Rao,Electronics,Lumina Smart Bulb,1,301,East,UPI
+TSX-1090,2026-02-17,Sara Khan,Fitness,Yoga Mat Pro,5,422,East,PayPal
+TSX-1091,2026-01-28,Amit Singh,Office Supplies,Mechanical Keyboard,3,127,East,Debit Card
+TSX-1092,2026-02-24,Amit Singh,Electronics,HyperLink Router,3,132,North,Debit Card
+TSX-1093,2026-02-24,Vikram Rao,Apparel,Cotton Slim-Fit Tee,5,363,North,Debit Card
+TSX-1094,2026-01-26,Vikram Rao,Office Supplies,Mechanical Keyboard,3,328,North,UPI
+TSX-1095,2026-02-10,Vikram Rao,Apparel,Cotton Slim-Fit Tee,4,399,South,PayPal
+TSX-1096,2026-01-27,Emily Blunt,Apparel,WeatherGuard Jacket,1,97,East,Debit Card
+TSX-1097,2026-03-05,Amit Singh,Electronics,Lumina Smart Bulb,1,305,West,Credit Card
+TSX-1098,2026-01-02,Amit Singh,Apparel,Breathable Mesh Sneakers,4,52,North,PayPal
+TSX-1099,2026-01-03,Vikram Rao,Fitness,IronGrip Dumbbells,1,218,South,PayPal
