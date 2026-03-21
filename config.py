@@ -15,7 +15,15 @@ class Config:
 
     CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH", "./chroma_db")
     UPLOAD_DIR = os.getenv("UPLOAD_DIR", "./uploads")
+    ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:8000")
+    RATE_LIMIT_CHAT = int(os.getenv("RATE_LIMIT_CHAT", "30"))
+    RATE_LIMIT_UPLOAD = int(os.getenv("RATE_LIMIT_UPLOAD", "10"))
+    LOG_DIR = os.getenv("LOG_DIR", "./logs")
+    MAX_QUERY_LENGTH = int(os.getenv("MAX_QUERY_LENGTH", "2000"))
     DATABASE_URL = "sqlite:///./rag_platform.db"
+    WATCHED_FOLDERS = os.getenv("WATCHED_FOLDERS", "./watched_folders")
+    SYNC_INTERVAL_MINUTES = int(os.getenv("SYNC_INTERVAL_MINUTES", "30"))
+    WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET", "change-this-secret")
 
 config = Config()
 

@@ -1,10 +1,13 @@
 import os
+from typing import List, Dict
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader, CSVLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 from config import config
 import shutil
+import hashlib
+# from hybrid_search import update_bm25_index, build_bm25_index
 
 # Mapping extensions to loaders
 LOADERS = {
@@ -13,6 +16,14 @@ LOADERS = {
     ".txt": TextLoader,
     ".csv": CSVLoader,
 }
+
+def compute_checksum(file_path: str) -> str:
+    """Compute MD5 hash of file contents."""
+    hash_md5 = hashlib.md5()
+    with open(file_path, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
 
 def get_vector_store(tenant_id: str):
     embeddings = OllamaEmbeddings(
@@ -25,7 +36,7 @@ def get_vector_store(tenant_id: str):
         collection_name=f"tenant_{tenant_id}"
     )
 
-async def process_document(file_path: str, tenant_id: str, doc_id: int):
+async def process_document(file_path: str, tenant_id: str, doc_id: int, version: int = 1):
     _, ext = os.path.splitext(file_path)
     loader_cls = LOADERS.get(ext.lower())
     if not loader_cls:
@@ -45,9 +56,15 @@ async def process_document(file_path: str, tenant_id: str, doc_id: int):
         chunk.metadata["tenant_id"] = tenant_id
         chunk.metadata["doc_id"] = doc_id
         chunk.metadata["filename"] = os.path.basename(file_path)
+        chunk.metadata["version"] = version
+        chunk.metadata["active"] = True
 
     vector_store = get_vector_store(tenant_id)
     vector_store.add_documents(chunks)
+    
+    # Update BM25 index
+    from hybrid_search import update_bm25_index
+    update_bm25_index(tenant_id, chunks)
     
     return len(chunks)
 
@@ -57,3 +74,19 @@ async def delete_document_from_vector_store(tenant_id: str, doc_id: int):
     # but the simplest reliable way is to use get() then delete() if needed.
     # Here we use the generic delete by metadata if possible.
     vector_store.delete(where={"doc_id": doc_id})
+    
+    # Rebuild BM25 index after deletion to stay in sync
+    from hybrid_search import build_bm25_index
+    build_bm25_index(tenant_id)
+
+def get_all_chunks_for_doc(tenant_id: str, doc_id: int) -> List[Dict]:
+    """Retrieves all active chunks for a document from ChromaDB."""
+    vector_store = get_vector_store(tenant_id)
+    # Chroma returns a dict with 'documents' and 'metadatas'
+    results = vector_store.get(where={"doc_id": doc_id, "active": True})
+    
+    chunks = []
+    if results["documents"]:
+        for text, meta in zip(results["documents"], results["metadatas"]):
+            chunks.append({"content": text, "metadata": meta})
+    return chunks

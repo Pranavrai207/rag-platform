@@ -15,4 +15,11 @@ chromadb
 pypdf
 python-docx
 sse-starlette
-pytorch
+torch
+rank-bm25
+sentence-transformers
+scikit-learn
+bleach
+slowapi
+watchdog
+schedule
